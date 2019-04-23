@@ -1,0 +1,40 @@
+{
+	"name": "batch-q",
+	"description": "Batch queue",
+	"version": "1.0.0",
+	"github": "https://github.com/MartinKolarik/batch-q/",
+	"main": "./src/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@martin-kolarik/eslint-config": "^1.0.5",
+		"@types/chai": "^4.1.7",
+		"@types/delay": "^3.1.0",
+		"@types/eslint": "^4.16.6",
+		"@types/mocha": "^5.2.6",
+		"chai": "^4.2.0",
+		"delay": "^4.2.0",
+		"eslint": "^5.16.0",
+		"eslint-plugin-chai-expect": "^2.0.1",
+		"eslint-plugin-html": "^5.0.3",
+		"eslint-plugin-node": "^8.0.1",
+		"eslint-plugin-promise": "^4.1.1",
+		"mocha": "^6.1.4"
+	},
+	"author": {
+		"name": "Martin Kolárik",
+		"email": "martin@kolarik.sk",
+		"url": "https://kolarik.sk"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MartinKolarik/batch-q.git"
+	},
+	"scripts": {
+		"lint": "eslint src",
+		"mocha": "mocha",
+		"test": "npm run lint && npm run mocha"
+	},
+	"bugs": {
+		"url": "https://github.com/MartinKolarik/batch-q/issues"
+	}
+}
