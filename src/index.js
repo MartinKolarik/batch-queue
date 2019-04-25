@@ -1,2 +1,2 @@
-const BatchQ = require('./BatchQ');
-module.exports = BatchQ;
+const BatchQueue = require('./BatchQueue');
+module.exports = BatchQueue;

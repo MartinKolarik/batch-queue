@@ -1,4 +1,4 @@
-class BatchQ {
+class BatchQueue {
 	constructor (callback, { batchSize = 100, concurrency = 1, timeout = 1000 } = {}) {
 		this.queue = [];
 		this.timeout = timeout;
@@ -52,4 +52,4 @@ class BatchQ {
 	}
 }
 
-module.exports = BatchQ;
+module.exports = BatchQueue;

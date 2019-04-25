@@ -1,8 +1,8 @@
 {
-	"name": "batch-q",
+	"name": "@martin-kolarik/batch-queue",
 	"description": "Batch queue",
 	"version": "1.0.0",
-	"github": "https://github.com/MartinKolarik/batch-q/",
+	"github": "https://github.com/MartinKolarik/batch-queue/",
 	"main": "./src/index.js",
 	"license": "MIT",
 	"devDependencies": {
@@ -27,7 +27,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/MartinKolarik/batch-q.git"
+		"url": "https://github.com/MartinKolarik/batch-queue.git"
 	},
 	"scripts": {
 		"lint": "eslint src",
@@ -35,6 +35,6 @@
 		"test": "npm run lint && npm run mocha"
 	},
 	"bugs": {
-		"url": "https://github.com/MartinKolarik/batch-q/issues"
+		"url": "https://github.com/MartinKolarik/batch-queue/issues"
 	}
 }

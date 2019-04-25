@@ -1,6 +1,6 @@
 const delay = require('delay');
 const expect = require('chai').expect;
-const BatchQ = require('../src/BatchQ');
+const BatchQueue = require('../src/BatchQueue');
 let lastLog = Date.now();
 
 function log (...args) {
@@ -15,7 +15,7 @@ function makeTest (itemCount, processingDelay, { batchSize, concurrency, timeout
 	let batchQ;
 
 	return new Promise((resolve) => {
-		batchQ = new BatchQ((items) => {
+		batchQ = new BatchQueue((items) => {
 			log('got items:', items);
 			expect(running++).to.be.lessThan(concurrency);
 
@@ -43,7 +43,7 @@ function makeTest (itemCount, processingDelay, { batchSize, concurrency, timeout
 	});
 }
 
-describe('batch-q', () => {
+describe('batch-queue', () => {
 	it('works with batchSize: 1, concurrency: 1, timeout: 0', () => {
 		return makeTest(10, 200, { batchSize: 1, concurrency: 1, timeout: 0 });
 	});

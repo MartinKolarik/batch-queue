@@ -1,17 +1,17 @@
-# batch-q
+# batch-queue
 
 ## Installation
 
 ```
-$ npm install batch-q
+$ npm install @martin-kolarik/batch-queue
 ```
 
 ## Usage
 
 ```js
-const BatchQ = require('batch-q');
+const BatchQueue = require('@martin-kolarik/batch-queue');
 
-const bQueue = new BatchQ(async (items) => {
+const batchQueue = new BatchQueue(async (items) => {
     // TODO: process `items` here.
 }, /* list of options with their default values: */ {
     batchSize: 100, // process 100 items at once
@@ -19,7 +19,7 @@ const bQueue = new BatchQ(async (items) => {
     timeout: 1000, // process the items after 1000 ms even if items.length < batchSize
 });
 
-bQueue.push(...items);
+batchQueue.push(...items);
 ```
 
 Run `npm test` for examples.
