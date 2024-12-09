@@ -1,7 +1,7 @@
 {
 	"name": "@martin-kolarik/batch-queue",
 	"description": "Batch queue",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"github": "https://github.com/MartinKolarik/batch-queue/",
 	"main": "./src/index.js",
 	"types": "./src/index.d.js",
